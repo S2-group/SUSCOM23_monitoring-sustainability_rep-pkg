@@ -1,0 +1,136 @@
+This is the online appendix to the related manustricpt with the title:
+
+###############################
+A Process for Monitoring the Impact of Architecture Principles on Sustainability: An Industrial Case Study
+###############################
+
+Authors:
+==========
+Markus Funke*
+Patricia Lago*
+Roberto Verdecchia*
+Roel Donker+
+
+*Vrije Universiteit Amsterdam, The Netherlands
++CGI Group, The Netherlands
+
+Corresponding author:
+===========
+Markus Funke, Vrije Universiteit Amsterdam, The Netherlands, m.t.funke@vu.nl
+
+
+In the following, the online appendix and its contents will be outlined.
+
+
+NOTE:
+===========
+As this research was conducted as a case study in the context of the Schiphol Group (aviation sector),
+raw data, i.e. interview transcripts and raw measurements, cannot be disclosed.
+Especially safety and security-relevant data has to be omitted. Also, data revealing hostnames, etc.
+
+CONTENTS:
+===========
+The package is structured according to the study design (Phase 1-3) and is complemented with further files/folders.
+
+
+/figures
+    |---/_sources
+            |--- *.drawio.xml
+                    Figures raw sources for draw.io
+    |--- *.png, *.pdf
+            Contains all produced and used figures throughout this research.
+
+            PCS_C*.pdf
+            (based on)
+            ===
+            Simon Brown. 2018. The C4 Model for Software Architecture. https://c4model.com Accessed: 2021-05-07.
+
+            pipeline.pdf:
+            (based on)
+            ===
+            Sarthak Gupta, Patricia Lago, and Roel Donker. 2021. A Framework of Software Architecture Principles for Sustainability-driven Design and Measurement. In 2021 IEEE 18th International Conference on Software Architecture Companion (ICSA-C).
+
+            Patricia Lago. 2019. Architecture Design Decision Maps for Software Sustainability. In 2019 IEEE/ACM 41st International Conference on Software Engineering: Software Engineering in Society (ICSE-SEIS). IEEE, Montreal, QC, Canada, 61–64. https: //doi.org/10.1109/ICSE-SEIS.2019.00015
+
+            Nelly Condori-Fernandez, Patricia Lago, Miguel R. Luaces, and Ángeles S. Places. 2020. An Action Research for Improving the Sustainability Assessment Framework In- struments. Sustainability 12, 4 (Feb. 2020).
+
+            DM_*.pdf
+            (based on)
+            ===
+            Patricia Lago. 2019. Architecture Design Decision Maps for Software Sustainability. In 2019 IEEE/ACM 41st International Conference on Software Engineering: Software Engineering in Society (ICSE-SEIS). IEEE, Montreal, QC, Canada, 61–64. https: //doi.org/10.1109/ICSE-SEIS.2019.00015
+
+            ToolsDimension.pdf
+            (based on)
+            ===
+            IMB logo - https://commons.wikimedia.org/wiki/File:IBM_logo.svg Accessed: 2021-10-08
+            OpenShift logo - https://commons.wikimedia.org/wiki/File:OpenShift-LogoType.svg Accessed: 2021-10-08
+            Qualys Inc. logo - https://commons.wikimedia.org/wiki/File:Logo-Qualys.svg Accessed: 2021-10-08
+            Splunk logo - https://commons.wikimedia.org/wiki/File:Splunk_logo.svg Accessed: 2021-10-08
+            Jira Software logo - https://commons.wikimedia.org/wiki/File:Jira_(Software)_logo.svg Accessed: 2021-10-08
+
+
+/misc
+    |--- case_study_protocol.pdf
+            Represents the case study protocol and the case study checklist created and used throughout this research.
+
+
+/Phase_1
+    |--- Interview_*
+            Interview slides (one per interview group)
+    |--- Interview-Protocol_*
+            Interview transcripts (one per interview group) => *omitted*
+
+
+/Phase_2
+    |--- Interview#2_*
+            Interview slides (one per interview group)
+    |--- Interview-Protocol_*
+            Interview transcripts (one per interview group) => *omitted*
+    |--- KPI_Tools_Overview
+            Spreadsheet that contains a list of all considered tools and their KPI mapping as well as the mapping on the sustainability dimensions and QAs
+    |--- Mapping_IT-Strategy-Sustainability
+            Spreadsheet that contains a preliminary mapping of Schiphol's IT & Data Strategy to the KPIs
+    |--- Workingfiles_Principles_PRSM_DecisionMap.drawio.xml
+            Draw.io sheet including all FINAL decision maps and PRSM+T models
+            All final models are named FINAL
+            AND
+            all intermediate results (including Phase 1 and Phase 2), like intermediate decision maps
+
+
+/Phase_3
+    |---/spider-charts
+        |---/rawData
+                |--- KPI_Tools_RawValues.xlsx
+                        Summary of analysed and used KPI values
+                |--- PCS_availability.pdf => *omitted*
+                |--- PCS_BIA.xls => *omitted*
+                |--- PCS_SPLUNK.csv => *omitted*
+                |--- PCS_Qualys.csv => *omitted*
+        |---/python
+                |--- plots_*.py
+                        One spider chart per architectural principle
+                |--- normalization_mock.py
+                        mix-max noramlization based on randomized data (mock data)
+                |--- plots_norm.py
+                        spider chart for mock data / normalized data
+    |---/focus-group
+            |--- FocusGroup.pdf
+                    Focus group slides
+            |--- FocusGroup-Protocol.pdf
+                    Focus group transcript
+
+/results
+    |--- Key_Performance_Indicators.pdf
+            Final set of KPIs
+    |--- Measurement_Tools.pdf
+            Final set of measurement tools
+    |--- PRSMT_DM_SQ_*.pdf
+            PRSM+T model; Decision Maps; SQ models for all four architectural tiers
+              - Governance & Security
+              - PCS Messaging Portal
+              - PCS Market Portal
+              - PCS Core
+    |--- Spider_Charts.pdf
+            Spider charts for all four architectural tiers
+    |--- Spider_Chart_Normalized.pdf
+            Spider chart based on normalized mock data
